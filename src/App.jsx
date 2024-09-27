@@ -9,8 +9,8 @@ function App() {
   const addValue = () => {
 
    setCounter(counter+1);
-   if(counter>=25){
-     alert("Counter can not be greater than 20")
+   if(counter>=30){
+     alert("NoNo!! Counter can not exceed 30")
      setCounter(20);
    }
   }
@@ -19,7 +19,7 @@ function App() {
 
     setCounter(counter-1);
     if(counter<=0){
-      alert("Counter can not be less than 0")
+      alert("Sorry!! Counter can not be less than 0")
       setCounter(0);
     }
    }
@@ -27,12 +27,12 @@ function App() {
   
   return (
     <>
-      <h1>COUNTER</h1>
-      <h2>Start Value : {counter} </h2>
+      <h1>CoustomCounter</h1>
+      <h2>Default Value : {counter} </h2>
 
       <button onClick={addValue}>Add Value</button> <br /><br/>
       <button onClick={removeValue}> Remove Value </button>
-      <p>NOTE: It is a Basic Counter for the puspose of practice.</p>
+      <p>NOTE: This is a Basic Counter Design for the purpose of practice.</p>
     </>
   )
 }
